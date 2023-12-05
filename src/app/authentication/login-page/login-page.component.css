@@ -1,0 +1,55 @@
+.genCon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* width: 50vw; */
+    height: 100vh;
+    /* background-color: yellow; */
+}
+
+.rows{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: red; */
+    width:100%;
+}
+
+.Signup{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 39px;
+    color: #5E5873;
+    text-align: center;
+}
+
+.label{
+    
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #5E5873;
+}
+.spanText{
+    color: red;
+}
+
+
+.account{
+    text-align: center;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #5E5873
+}
+
+.noAccount{
+    color: #D62196;
+}
+
+.account a{
+    text-decoration: none;
+}

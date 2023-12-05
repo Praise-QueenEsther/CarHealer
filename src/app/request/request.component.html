@@ -1,0 +1,78 @@
+
+            
+<!-- <div class="container-fluid genCon"> -->
+    <!-- <div class="row"> -->
+    
+      <!-- <div class="col-md-3 sideCol sideLin">
+        <app-side-bar></app-side-bar>
+        
+      </div> -->
+  
+      <!-- Form -->
+      <!-- <div class="col-md-9 sideDes formGen"> -->
+        <form (ngSubmit)="onSubmit()" class="formCon">
+          <!-- Your form fields here -->
+          <div id="fileSelector">
+            <div>
+                <div class="form-group">
+                  <label for="vehicleName">Name of vehicle</label>
+                  <input type="text" [(ngModel)]="vehicleName" name="vehicleName" id="vehicleName" class="form-control formClass" style="width: 60%;">
+                </div>
+        
+                <div class="form-group">
+                  <label for="vehicleDescription">Description of vehicle</label>
+                  <textarea [(ngModel)]="vehicleDescription" name="vehicleDescription" id="vehicleDescription" class="form-control formClass" style="width: 60%;"></textarea>
+                </div>
+        
+                <div class="form-group">
+                  <label for="image">Image</label>
+                  <div class="mb-3">
+                    <input (change)="fileSelect($event)" type="file" name="fileUpload" #fileUpload hidden multiple>
+                    <button (click)="fileUpload.click()" type="button" class="btn btn-primary">Upload Image</button>
+                  </div>
+                </div>
+              </div>
+        
+              <div>
+                <div class="row uploadList" *ngFor="let item of selectedFiles">
+                  <div class="col-sm-2">{{item.name}}</div>
+                  <div class="col-sm-2">
+                    <div class="progress"></div>
+                  </div>
+                  <div class="col-sm-2">
+                    <button type="button" class="btn  btn-primary" (click)="removeFile(item)">Remove File</button>
+                  </div>
+                </div>
+              </div>
+        
+          </div>
+          <div>
+           
+          </div>
+  
+          <div class="row">
+            <div class="col-sm-12">
+              <button type="submit" class="btn btn-primary" [disabled]="selectedFiles.length === 0" (click)="addVehicle()">Submit</button>
+            </div>
+          </div>
+        </form>
+      <!-- </div> -->
+    <!-- </div> -->
+  <!-- </div> -->
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+  

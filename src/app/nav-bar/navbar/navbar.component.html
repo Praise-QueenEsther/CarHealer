@@ -1,0 +1,36 @@
+
+
+<nav class="navbar navbar-expand-lg navbar-light navCol fixed-top">
+    <div class="container-fluid d-flex" style="min-height: 10vh;">
+      <a href=""><img src="/assets/car-logo7.png" alt="CARHEALER" class="logoImg"></a>
+      <button class="navbar-toggler navCol" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+      (click)="toggleMenu()"
+      [attr.aria-expanded]="!isMenuCollapsed">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent"  [ngClass]="{ 'show': !isMenuCollapsed }">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link text-white hov" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+           
+            <!-- <button type="button" mat-raised-button routerLink="/request">
+              request
+            </button> -->
+            <a class="nav-link text-white hov" routerLink="/request">Request</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white hov" routerLink="/past-request">Past Request</a>
+            <!-- <button type="button" mat-raised-button routerLink="/past-request">
+              Past Request
+            </button> -->
+        
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+ 

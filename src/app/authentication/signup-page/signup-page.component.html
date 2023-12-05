@@ -1,0 +1,41 @@
+<div class="container genCon">
+  <div class="row rows justify-content-center">
+    <div class="col-md-6">
+      <div class="card cards">
+        <div class="card-header Signup">Signup</div>
+        <div class="card-body">
+          <form (ngSubmit)="formSubmit()" [formGroup]="myForm">
+            <div class="mb-3">
+              <label for="email" class="form-label label">Please enter your email</label>
+            <input type="email" id="email" formControlName="emailForm" class="form-control">
+            <span *ngIf="myForm.controls['emailForm'].hasError('required') && myForm.controls['emailForm'].touched && !submitted" class="required pull-right spanText">Please Enter Email</span>
+            <span *ngIf="myForm.controls['emailForm'].hasError('pattern') && myForm.controls['emailForm'].touched" class="spanText">Invalid Email</span>
+            </div>
+            <div class="mb-3">
+              
+              <label for="password" class="form-label label">Password</label>
+            <input type="password" id="password" formControlName="passwordForm" class="form-control">
+            <span *ngIf="myForm.controls['passwordForm'].hasError('required') && myForm.controls['passwordForm'].touched && !submitted" class="spanText">Please Enter Password</span>
+            <span *ngIf="myForm.controls['passwordForm'].hasError('pattern') && myForm.controls['passwordForm'].touched" class="spanText">Password must contain at least one number,
+                atleast one lowercase letter, atleast one uppercase letter and minimum length of 6 characters.
+            </span>
+            </div>
+            <div class="mb-3">
+                <label for="confirmPassword" class="form-label label">Confirm Password</label>
+            <input type="password" id="confirmPassword" formControlName="confirmPasswordForm" class="form-control">
+            <span *ngIf="myForm.controls['confirmPasswordForm'].hasError('required') && myForm.controls['confirmPasswordForm'].touched && !submitted" class="required pull-right spanText">Please Confirm your Password</span>
+            <span *ngIf="myForm.controls['confirmPasswordForm'].hasError('passwordMismatch') && myForm.controls['confirmPasswordForm'].touched && submitted" class="spanText">
+                Passwords do not match.
+              </span>
+              </div>
+            <!-- <button type="submit" class="btn btn-primary" [disabled]="!myForm.valid">Signup</button> -->
+            <button type="submit" class="btn btn-primary">Signup</button>
+            <br>
+            <p class="account">Have an account?  <a routerLink="/login"><span class="noAccount"> Sign in</span></a> </p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+

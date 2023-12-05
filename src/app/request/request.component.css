@@ -1,0 +1,70 @@
+/* .sideCol{
+    height: 100vh;
+    background-image: linear-gradient(to right, rgb(3, 3, 121), rgb(224, 221, 221),  rgb(3, 3, 121)); 
+}
+
+.sideDes{
+    padding-top: 120px;
+}
+
+.sideDess{
+    padding-top: 135px;
+}
+
+.sideDes li{
+    background-color: transparent;
+    color: white;
+    border: none;
+    border-bottom: 1px solid grey;
+} */
+
+.form-control:focus {
+    outline: transparent !important; /* Remove the outline on focus */
+    /* Add any additional styling you want for the focused element */
+}
+
+
+/* .sideCol{
+    
+    height: 100vh;
+    background-image: linear-gradient(to right, rebeccapurple,purple)
+} */
+
+/* .btnDark{
+    background-image: linear-gradient(to right, rgb(3, 3, 121), rgb(197, 194, 194), rgb(3, 3, 121)); 
+}
+
+.formCon{
+    padding-left: 250px;
+} */
+
+.sideDes{
+    padding-top: 136px;
+ 
+    
+}
+
+/* .sideDes li{
+    background-color: transparent;
+    color: white;
+    border: none;
+    border-bottom: 1px solid grey;
+    cursor: pointer;
+} */
+
+/* .tableSuccess{
+    background-image: linear-gradient(45deg, rebeccapurple,purple) !important
+    
+} */
+.sideLin{
+   
+   height: 100%;
+}
+
+.sideCol{
+    background-image: linear-gradient(to right, rgb(3, 3, 121), rgb(197, 194, 194),  rgb(3, 3, 121)); 
+    height: 100vh;
+       
+}
+
+
